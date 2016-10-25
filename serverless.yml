@@ -8,5 +8,11 @@ functions:
   webhook:
     handler: handler.webhook
     events:
-      - http: GET webhook
-      - http: POST webhook
+      - http:  
+          path: webook
+          method: GET
+          integration: lambda
+      - http: 
+          path: webook
+          method: POST
+          integration: lambda
